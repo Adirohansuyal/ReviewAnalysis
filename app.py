@@ -56,7 +56,7 @@ if st.button("Analyze Sentiment"):
         prediction = model.predict(transformed_text)[0]
 
         # Map Sentiment Labels
-        sentiment_labels = {0: "😞 Negative", 1: "😊 Positive", 2: "😐 Neutral"}
+        sentiment_labels = {0: "😞 Negative", 1: "😊 Positive"}
         st.subheader(f"📌 Prediction: {sentiment_labels[prediction]}")
     else:
         st.warning("⚠️ Please enter a review before analyzing.")
